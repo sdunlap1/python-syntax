@@ -20,7 +20,23 @@ def print_upper_words(words, must_start_with=None):
         # If must_start_with not provided, just print the word in uppercase
         print(word.upper())    
 
-
 # this should print "HELLO", "HEY", "YO", and "YES"
 print_upper_words(["hello", "hey", "goodbye", "yo", "yes"],
                    must_start_with={"h", "y"})
+
+
+def print_e_words(words):
+    """
+    Print each word on a separate line in uppercase if it starts with 'e' or 'E'.
+    
+    - words: list of words
+    
+    Example:
+        print_e_words(["elephant", "Eagle", "hello", "hey", "goodbye", "yo", "yes"])
+    """
+    for word in words:
+        if word[0].lower() == "e": # Check if the word starts with 'e' or 'E'
+          print(word.upper())
+
+print("\nWords starting with 'e', in uppercase:")
+print_e_words(["elephant", "Eagle", "hello", "hey", "goodbye", "yo", "yes"])
