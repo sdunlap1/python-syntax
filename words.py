@@ -22,7 +22,7 @@ def print_upper_words(words, must_start_with=None):
 
 # this should print "HELLO", "HEY", "YO", and "YES"
 print_upper_words(["hello", "hey", "goodbye", "yo", "yes"],
-                   must_start_with={"h", "y"})
+must_start_with={"h", "y"})
 
 
 def print_e_words(words):
